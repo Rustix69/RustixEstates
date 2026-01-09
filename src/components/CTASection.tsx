@@ -1,5 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { FadeInLeft, FadeInRight } from "./ScrollAnimations";
+import { motion } from "framer-motion";
 
 const CTASection = () => {
   const avatars = [
@@ -13,7 +15,11 @@ const CTASection = () => {
     <section className="relative min-h-[70vh] flex items-center overflow-hidden my-8 mx-4 lg:mx-8 rounded-3xl">
       {/* Background */}
       <div className="absolute inset-0">
-        <img
+        <motion.img
+          initial={{ scale: 1.1 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+          viewport={{ once: true }}
           src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&h=1080&fit=crop"
           alt="Luxury home"
           className="w-full h-full object-cover"
@@ -24,7 +30,7 @@ const CTASection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto container-padding py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
+          <FadeInLeft className="space-y-6">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary-foreground leading-tight">
               Build your dream house with Haventra
             </h2>
@@ -36,10 +42,10 @@ const CTASection = () => {
               Explore Properties
               <ArrowUpRight className="w-5 h-5" />
             </Button>
-          </div>
+          </FadeInLeft>
 
           {/* Review Card */}
-          <div className="flex justify-end">
+          <FadeInRight className="flex justify-end">
             <div className="bg-secondary/80 backdrop-blur-md rounded-2xl p-6 max-w-sm border border-secondary-foreground/10">
               <div className="flex items-center gap-4 mb-4">
                 <div className="flex -space-x-3">
@@ -61,7 +67,7 @@ const CTASection = () => {
                 More than 1.2k of our customers found their dream houses with Haventra
               </p>
             </div>
-          </div>
+          </FadeInRight>
         </div>
       </div>
     </section>

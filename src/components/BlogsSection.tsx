@@ -1,4 +1,5 @@
 import BlogCard from "./BlogCard";
+import { FadeInUp, StaggerContainer, StaggerItem } from "./ScrollAnimations";
 
 const blogs = [
   {
@@ -31,24 +32,26 @@ const BlogsSection = () => {
     <section id="blogs" className="section-accent section-padding rounded-3xl mx-4 lg:mx-8 my-8">
       <div className="container mx-auto container-padding">
         {/* Header */}
-        <div className="space-y-4 mb-12">
+        <FadeInUp className="space-y-4 mb-12">
           <span className="pill-tag">Blogs</span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
             Latest <span className="text-primary">news, insights</span> and expert tips
           </h2>
-        </div>
+        </FadeInUp>
 
         {/* Featured Blog */}
-        <div className="mb-12">
+        <FadeInUp delay={0.1} className="mb-12">
           <BlogCard {...blogs[0]} />
-        </div>
+        </FadeInUp>
 
         {/* Blog Grid */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <StaggerContainer className="grid md:grid-cols-3 gap-6">
           {blogs.slice(1).map((blog, index) => (
-            <BlogCard key={index} {...blog} />
+            <StaggerItem key={index}>
+              <BlogCard {...blog} />
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerContainer>
       </div>
     </section>
   );

@@ -1,33 +1,36 @@
 import { ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { FadeInLeft, FadeInRight, FadeInUp } from "./ScrollAnimations";
 
 const TestimonialsSection = () => {
   return (
     <section className="section-dark section-padding rounded-3xl mx-4 lg:mx-8 my-8">
       <div className="container mx-auto container-padding">
         {/* Header */}
-        <div className="space-y-4 mb-12">
+        <FadeInUp className="space-y-4 mb-12">
           <span className="pill-tag bg-accent/20 text-accent border-accent/30">
             Testimonials
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-secondary-foreground">
             Feedbacks from our valuable clients
           </h2>
-        </div>
+        </FadeInUp>
 
         {/* Content */}
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
-          <div className="rounded-2xl overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=500&fit=crop"
-              alt="Happy clients with real estate agent"
-              className="w-full h-[500px] object-cover"
-            />
-          </div>
+          <FadeInLeft>
+            <div className="rounded-2xl overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=500&fit=crop"
+                alt="Happy clients with real estate agent"
+                className="w-full h-[500px] object-cover"
+              />
+            </div>
+          </FadeInLeft>
 
           {/* Testimonial */}
-          <div className="space-y-8 relative">
+          <FadeInRight className="space-y-8 relative">
             <div className="text-6xl text-primary/50 font-serif">"</div>
             
             <blockquote className="text-xl md:text-2xl text-secondary-foreground/90 leading-relaxed">
@@ -49,7 +52,7 @@ const TestimonialsSection = () => {
                 <ChevronRight className="w-5 h-5" />
               </Button>
             </div>
-          </div>
+          </FadeInRight>
         </div>
       </div>
     </section>

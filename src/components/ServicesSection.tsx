@@ -1,10 +1,10 @@
-import { ChevronUp, ChevronDown } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { FadeInUp, FadeInRight } from "./ScrollAnimations";
 
 const services = [
   {
@@ -49,7 +49,7 @@ const ServicesSection = () => {
     <section className="section-light section-padding">
       <div className="container mx-auto container-padding">
         {/* Header */}
-        <div className="space-y-4 mb-12">
+        <FadeInUp className="space-y-4 mb-12">
           <span className="pill-tag">Services</span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground max-w-2xl">
             We offer inclusive services of{" "}
@@ -57,11 +57,11 @@ const ServicesSection = () => {
             <span className="text-primary">selling</span> and{" "}
             <span className="text-primary">managing</span> properties
           </h2>
-        </div>
+        </FadeInUp>
 
         {/* Accordion */}
         <div className="grid lg:grid-cols-5 gap-8">
-          <div className="lg:col-span-3">
+          <FadeInUp className="lg:col-span-3">
             <Accordion type="single" collapsible defaultValue="01" className="space-y-4">
               {services.map((service) => (
                 <AccordionItem
@@ -85,10 +85,10 @@ const ServicesSection = () => {
                 </AccordionItem>
               ))}
             </Accordion>
-          </div>
+          </FadeInUp>
 
           {/* Image */}
-          <div className="lg:col-span-2 hidden lg:block">
+          <FadeInRight className="lg:col-span-2 hidden lg:block">
             <div className="sticky top-32">
               <div className="rounded-2xl overflow-hidden">
                 <img
@@ -98,7 +98,7 @@ const ServicesSection = () => {
                 />
               </div>
             </div>
-          </div>
+          </FadeInRight>
         </div>
       </div>
     </section>
