@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 w-full bg-card/95 backdrop-blur-md border-b border-border">
+    <header className="sticky top-0 z-50 w-full bg-card/95 backdrop-blur-md">
       <div className="container mx-auto container-padding">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
