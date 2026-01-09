@@ -14,7 +14,7 @@ const Footer = () => {
               <div className="flex items-center justify-center w-8 h-8 bg-primary rounded-lg">
                 <Home className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="text-xl font-bold text-secondary-foreground">Haventra</span>
+              <span className="text-xl font-bold text-secondary-foreground">Rustix Estates</span>
             </a>
             <p className="text-secondary-foreground/70 max-w-sm">
               Making Luxury Living Effortless
@@ -97,7 +97,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="pt-8 border-t border-secondary-foreground/20 text-center">
           <p className="text-secondary-foreground/60 text-sm">
-          © All copyrights by Haventra
+          © All copyrights by Rustix Estates
         </p>
         </div>
       </div>

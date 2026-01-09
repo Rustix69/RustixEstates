@@ -19,10 +19,10 @@ const WhyUsSection = () => {
             
             <div className="space-y-4 text-secondary-foreground/80">
               <p>
-                At <strong className="text-secondary-foreground">Haventra</strong>, we believe finding a home should be more than a transaction — it should be a meaningful experience. Our platform is built to bridge the gap between premium properties and people searching for a space that truly fits their lifestyle.
+                At <strong className="text-secondary-foreground">Rustix Estates</strong>, we believe finding a home should be more than a transaction — it should be a meaningful experience. Our platform is built to bridge the gap between premium properties and people searching for a space that truly fits their lifestyle.
               </p>
               <p>
-                Backed by a passionate team of real estate professionals and creative minds, Haventra combines design, technology, and local expertise to deliver exceptional service and seamless user experiences. Whether you're a first-time buyer or just beginning your search, we're here to help you navigate the journey.
+                Backed by a passionate team of real estate professionals and creative minds, Rustix Estates combines design, technology, and local expertise to deliver exceptional service and seamless user experiences. Whether you're a first-time buyer or just beginning your search, we're here to help you navigate the journey.
               </p>
             </div>
 

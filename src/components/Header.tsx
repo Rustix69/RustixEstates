@@ -11,7 +11,7 @@ const Header = () => {
             <div className="flex items-center justify-center w-8 h-8 bg-primary rounded-lg">
               <Home className="w-5 h-5 text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold text-foreground">Haventra</span>
+            <span className="text-xl font-bold text-foreground">Rustix Estates</span>
           </a>
 
           {/* Navigation */}

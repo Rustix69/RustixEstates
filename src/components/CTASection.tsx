@@ -32,7 +32,7 @@ const CTASection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <FadeInLeft className="space-y-6">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary-foreground leading-tight">
-              Build your dream house with Haventra
+              Build your dream house with Rustix Estates
             </h2>
             <p className="text-lg text-secondary-foreground/80 max-w-md">
               Luxury, comfort, and convenience — all in one place.
@@ -64,7 +64,7 @@ const CTASection = () => {
                 </div>
               </div>
               <p className="text-sm text-secondary-foreground/80">
-                More than 1.2k of our customers found their dream houses with Haventra
+                More than 1.2k of our customers found their dream houses with Rustix Estates
               </p>
             </div>
           </FadeInRight>
