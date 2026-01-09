@@ -1,4 +1,4 @@
-import { Home, ArrowUpRight } from "lucide-react";
+import { Home, ArrowUpRight, Twitter, Linkedin, Instagram, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
@@ -47,15 +47,34 @@ const Footer = () => {
           <div>
             <p className="text-secondary-foreground font-medium mb-4">Social</p>
             <div className="flex gap-4">
-              {["X", "in", "📷", "f"].map((icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="w-10 h-10 flex items-center justify-center rounded-full border border-secondary-foreground/20 text-secondary-foreground hover:bg-secondary-foreground/10 transition-colors"
-                >
-                  {icon}
-                </a>
-              ))}
+              <a
+                href="#"
+                aria-label="Twitter"
+                className="w-10 h-10 flex items-center justify-center rounded-full border border-secondary-foreground/20 text-secondary-foreground hover:bg-secondary-foreground/10 transition-colors"
+              >
+                <Twitter className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                className="w-10 h-10 flex items-center justify-center rounded-full border border-secondary-foreground/20 text-secondary-foreground hover:bg-secondary-foreground/10 transition-colors"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                aria-label="Instagram"
+                className="w-10 h-10 flex items-center justify-center rounded-full border border-secondary-foreground/20 text-secondary-foreground hover:bg-secondary-foreground/10 transition-colors"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                aria-label="Facebook"
+                className="w-10 h-10 flex items-center justify-center rounded-full border border-secondary-foreground/20 text-secondary-foreground hover:bg-secondary-foreground/10 transition-colors"
+              >
+                <Facebook className="w-5 h-5" />
+              </a>
             </div>
           </div>
 

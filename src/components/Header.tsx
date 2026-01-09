@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full bg-card/95 backdrop-blur-md">
-      <div className="container mx-auto container-padding">
+      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2 group">

@@ -47,7 +47,7 @@ const services = [
 const ServicesSection = () => {
   return (
     <section className="section-light section-padding">
-      <div className="container mx-auto container-padding">
+      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <FadeInUp className="space-y-4 mb-12">
           <span className="pill-tag">Services</span>

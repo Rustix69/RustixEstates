@@ -13,7 +13,7 @@ const blogs = [
   {
     image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&h=300&fit=crop",
     tag: "Investment",
-    title: "Top 5 Neighborhoods for Real Estate Investment in 2024",
+    title: "Top 5 Neighborhoods for Real Estate Investment",
   },
   {
     image: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=400&h=300&fit=crop",
