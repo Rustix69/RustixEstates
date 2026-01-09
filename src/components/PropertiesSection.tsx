@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import PropertyCard from "./PropertyCard";
+import { FadeInUp, StaggerContainer, StaggerItem } from "./ScrollAnimations";
 
 const properties = [
   {
@@ -70,27 +71,29 @@ const PropertiesSection = () => {
     <section id="properties" className="section-light section-padding">
       <div className="container mx-auto container-padding">
         {/* Header */}
-        <div className="space-y-4 mb-12">
+        <FadeInUp className="space-y-4 mb-12">
           <span className="pill-tag">Properties</span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
             Our <span className="text-primary">latest</span> properties
           </h2>
-        </div>
+        </FadeInUp>
 
         {/* Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {properties.map((property, index) => (
-            <PropertyCard key={index} {...property} />
+            <StaggerItem key={index}>
+              <PropertyCard {...property} />
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerContainer>
 
         {/* CTA */}
-        <div className="flex justify-center mt-12">
+        <FadeInUp delay={0.3} className="flex justify-center mt-12">
           <Button variant="outline" size="lg">
             View All Properties
             <ArrowUpRight className="w-4 h-4" />
           </Button>
-        </div>
+        </FadeInUp>
       </div>
     </section>
   );

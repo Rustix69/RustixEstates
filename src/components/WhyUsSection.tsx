@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { FadeInLeft, FadeInRight } from "./ScrollAnimations";
 
 const WhyUsSection = () => {
   return (
@@ -7,7 +8,7 @@ const WhyUsSection = () => {
       <div className="container mx-auto container-padding">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
-          <div className="space-y-6">
+          <FadeInLeft className="space-y-6">
             <span className="pill-tag bg-primary text-primary-foreground border-none">
               Why us?
             </span>
@@ -29,10 +30,10 @@ const WhyUsSection = () => {
               About Us
               <ArrowUpRight className="w-4 h-4" />
             </Button>
-          </div>
+          </FadeInLeft>
 
           {/* Right Image */}
-          <div className="relative">
+          <FadeInRight>
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=500&fit=crop"
@@ -40,7 +41,7 @@ const WhyUsSection = () => {
                 className="w-full h-[500px] object-cover"
               />
             </div>
-          </div>
+          </FadeInRight>
         </div>
       </div>
     </section>
