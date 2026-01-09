@@ -11,19 +11,20 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <motion.img
-          initial={{ scale: 1.1 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 1.5, ease: "easeOut" }}
-          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=1080&fit=crop"
-          alt="Modern luxury skyscrapers"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-secondary/90 via-secondary/70 to-secondary/80" />
-      </div>
+    <section className="relative py-4 px-4 md:px-6 lg:px-8">
+      <div className="relative min-h-[85vh] flex items-center overflow-hidden rounded-3xl">
+        {/* Background Image */}
+        <div className="absolute inset-0 rounded-3xl overflow-hidden">
+          <motion.img
+            initial={{ scale: 1.1 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=1080&fit=crop"
+            alt="Modern luxury skyscrapers"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-secondary/90 via-secondary/70 to-secondary/80" />
+        </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto container-padding py-20">
@@ -116,12 +117,10 @@ const HeroSection = () => {
                 More than 1.2k of our customers found their dream houses with Haventra
               </p>
             </div>
-          </motion.div>
+        </motion.div>
         </div>
       </div>
-
-      {/* Rounded bottom corners */}
-      <div className="absolute bottom-0 left-0 right-0 h-8 bg-background rounded-t-3xl" />
+      </div>
     </section>
   );
 };
