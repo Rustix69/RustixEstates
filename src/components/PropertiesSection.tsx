@@ -68,8 +68,8 @@ const properties = [
 
 const PropertiesSection = () => {
   return (
-    <section id="properties" className="section-light section-padding">
-      <div className="container mx-auto container-padding">
+    <section id="properties" className="section-light section-padding px-3 md:px-4">
+      <div className="w-full">
         {/* Header */}
         <FadeInUp className="space-y-4 mb-12">
           <span className="pill-tag">Properties</span>
