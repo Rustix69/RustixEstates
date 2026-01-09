@@ -4,8 +4,8 @@ import { FadeInLeft, FadeInRight } from "./ScrollAnimations";
 
 const WhyUsSection = () => {
   return (
-    <section id="about" className="section-dark section-padding rounded-3xl px-3 md:px-4 my-8">
-      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="section-dark section-padding rounded-3xl mx-4 lg:mx-8 my-8">
+      <div className="container mx-auto container-padding">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <FadeInLeft className="space-y-6">
