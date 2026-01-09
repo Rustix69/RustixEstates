@@ -39,7 +39,7 @@ const HeroSection = () => {
             >
               Find your home
               <br />
-              with Haventra
+              with Rustix Estates
             </motion.h1>
             
             <motion.p
@@ -114,7 +114,7 @@ const HeroSection = () => {
                 </div>
               </div>
               <p className="text-sm text-secondary-foreground/80">
-                More than 1.2k of our customers found their dream houses with Haventra
+                More than 1.2k of our customers found their dream houses with Rustix Estates
               </p>
             </div>
         </motion.div>
