@@ -11,7 +11,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="relative py-4 px-4 md:px-6 lg:px-8">
+    <section className="relative py-3 px-3 md:px-4">
       <div className="relative min-h-[85vh] flex items-center overflow-hidden rounded-3xl">
         {/* Background Image */}
         <div className="absolute inset-0 rounded-3xl overflow-hidden">
