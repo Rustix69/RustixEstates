@@ -4,8 +4,9 @@ import { Input } from "@/components/ui/input";
 
 const Footer = () => {
   return (
-    <footer className="section-dark rounded-t-3xl">
-      <div className="container mx-auto container-padding py-16">
+    <footer className="px-4 md:px-6 lg:px-8 pb-4">
+      <div className="section-dark rounded-3xl">
+        <div className="container mx-auto container-padding py-16">
         <div className="grid lg:grid-cols-2 gap-12 mb-12">
           {/* Left */}
           <div className="space-y-6">
@@ -96,9 +97,10 @@ const Footer = () => {
         {/* Copyright */}
         <div className="pt-8 border-t border-secondary-foreground/20 text-center">
           <p className="text-secondary-foreground/60 text-sm">
-            © All copyrights by Haventra
-          </p>
+          © All copyrights by Haventra
+        </p>
         </div>
+      </div>
       </div>
     </footer>
   );
